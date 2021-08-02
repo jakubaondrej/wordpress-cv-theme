@@ -1,0 +1,51 @@
+/* === Import Bootstrap functions and variables === */
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+/*-------------------------------------------------------------------*/
+/* Change theme-colors */
+$theme-colors: (
+                primary: #007784,
+                secondary: #708d91,
+                success: #227700,
+                info:  #26ebff,
+                warning: #a87b00,
+                danger: #7c0d06,
+                light: #e1fcff,
+                "black": #000000,
+                "white": white,
+);
+$link-shade-percentage: 50%;
+$btn-hover-bg-shade-amount: 35%;
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/helpers/colored-links";
+
+$theme-colors: (
+                primary: #00646f,
+                secondary: #708d91,
+                success: #227700,
+                info:  #26ebff,
+                warning: #a87b00,
+                danger: #7c0d06,
+                light: #e1fcff,
+                "black": #000000,
+                "white": white,
+);
+$badge-padding-y:                   2px;
+$badge-padding-x:                   3px;
+/*-------------------------------------------------------------------*/
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/utilities/api";
+@import "node_modules/bootstrap/scss/progress";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/reboot";
+
+
+
+@import "scss/index";

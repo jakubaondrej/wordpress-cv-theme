@@ -1,0 +1,83 @@
+.timeline {
+    position: relative;
+    box-sizing: border-box;
+
+    /* The line */
+    &::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        background-color: $primary;
+        top: 0px;
+        bottom: 0;
+        left:0;
+        right:0;
+        margin: 0 auto;
+        display: block;
+        clear:both;
+        box-sizing: border-box;
+    }
+
+    .timeline-year {
+        display: block;
+        width: 100px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        background: $primary;
+        margin: auto;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+
+        &::before{
+            content: "";
+            width: 0;
+            height: 0;
+            border-right: 15px solid #f4a24c;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            margin: auto 0;
+            position: absolute;
+            top: 0;
+            left: -33px;
+            bottom: 0;
+        }
+    }
+    .timeline-content {
+        width: 50%;
+        padding-right: 100px;
+    }
+
+    
+}
+a{
+    &[data-bs-toggle="collapse"]{
+        &[aria-expanded="false"]{
+            strong{
+                &::after{
+                    font-family: 'Material Icons';
+                    content: "expand_more";
+                    -webkit-font-feature-settings: 'liga';
+                }
+            }
+        }
+        &[aria-expanded="true"]{
+            strong{
+                &::after{
+                    font-family: 'Material Icons';
+                    content: "expand_less";
+                    -webkit-font-feature-settings: 'liga'; 
+                }
+            }
+        }
+    }
+    
+}

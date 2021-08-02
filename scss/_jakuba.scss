@@ -1,0 +1,28 @@
+@each $height in auto, inherit, initial {  
+    .h-#{$height} {  
+        height:  $height ;  
+    }  
+} 
+@each $height in 100, 75, 50, 25 {  
+    .h-#{$height} {  
+        height:  $height * 1%;  
+    }  
+} 
+
+.bg-light-oppacity{
+    background-color: #dce2e8b2 !important;
+}
+
+.bg-white-oppacity{
+    background-color: #ffffffc4 !important;
+}
+
+.bg-black{
+    background-color: $black !important;
+
+}
+
+.center_image{
+    display:block;
+    margin:auto;
+}
